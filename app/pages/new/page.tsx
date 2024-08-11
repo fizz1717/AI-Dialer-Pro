@@ -121,7 +121,7 @@ export default function InstructionsPage() {
                   className="font-sans font-medium cursor-pointer text-white text-[16px]"
                   onClick={handleToggle}
                 >
-                  <Link href="http://localhost:3000/">HOME</Link>
+                  <Link href="/Homepage">HOME</Link>
                 </li>
 
                 <li
@@ -136,7 +136,7 @@ export default function InstructionsPage() {
                   className="font-sans font-medium cursor-pointer text-white text-[16px]"
                   onClick={handleToggle}
                 >
-                  <Link href="http://localhost:3000/pages/new">
+                  <Link href="/pages/new">
                     INSTRUCTION
                   </Link>
                 </li>
