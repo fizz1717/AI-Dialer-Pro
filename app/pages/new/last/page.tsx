@@ -37,9 +37,9 @@ export default function DialerPage() {
               Upload Your CSV File Here
             </label>
             <input
-              type="file"
-              id="file"
-              name="file"
+              type="url"
+              id="url"
+              name="url"
               className="upload-csv-file"
             ></input>
 
