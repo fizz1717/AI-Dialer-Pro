@@ -14,7 +14,7 @@ const Homepage = () => {
           Ready to elevate your call center operations to new heights?
         </h1>
         <h2 className="absolute left-10 top-40 md:top-60 text-white text-lg md:text-2xl lg:text-3xl">
-          Our AI Dialer Pro is the professional solution you've been seeking.
+          Our AI Dialer Pro is the professional solution you have been seeking.
         </h2>
         <div className="start-button absolute left-10 top-60 md:top-80">
           <button className="text bg-white text-purple-600 py-2 px-4 rounded-full">
