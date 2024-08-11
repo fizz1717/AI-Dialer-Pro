@@ -76,7 +76,7 @@ export default function SigninPage() {
       <main className="bg-black h-28 w-full sm:hidden">
               <div className="flex flex-row justify-center items-center  px-3 py-9">
                   <h1 className="font-sans font-bold text-3xl text-white">
-                      AI DAILER PRO
+                      AI DIALER PRO
                   </h1>
 
                   <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -93,7 +93,7 @@ export default function SigninPage() {
                                   className="font-sans font-medium cursor-pointer text-white text-[16px]"
                                   onClick={handleToggle}
                               >
-                                  <Link href="http://localhost:3000/">HOME</Link>
+                                  <Link href="/Homepage">HOME</Link>
                               </li>
                               
 
@@ -109,7 +109,7 @@ export default function SigninPage() {
                                   className="font-sans font-medium cursor-pointer text-white text-[16px]"
                                   onClick={handleToggle}
                               >
-                                  <Link href="http://localhost:3000/pages/new">INSTRUCTION</Link>
+                                  <Link href="/pages/new">INSTRUCTION</Link>
                               </li>
 
                           </ul>
