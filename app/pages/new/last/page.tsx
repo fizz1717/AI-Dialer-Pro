@@ -1,14 +1,78 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
 import Link from "next/link";
-import '../app/globals.css'; 
+
 export default function DialerPage() {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  // Inline styles
+  const dialerFormStyle = {
+    position: 'absolute',
+    top: 0,
+  };
+
+  const dialerPathStyle = {
+    position: 'absolute',
+    top: 400,
+    left: 720,
+    fontFamily: '"Quicksand", sans-serif',
+    fontSize: 35,
+    fontWeight: 400,
+    fontStyle: 'normal',
+    zIndex: 1,
+    width: 432,
+  };
+
+  const pathStyle = {
+    position: 'absolute',
+    top: 450,
+    left: 720,
+    border: '0.5px solid #323941',
+    borderRadius: 9,
+    width: 636,
+    height: 70,
+  };
+
+  const csvFileStyle = {
+    position: 'absolute',
+    top: 560,
+    left: 720,
+    fontFamily: '"Quicksand", sans-serif',
+    fontSize: 35,
+    width: 434,
+  };
+
+  const uploadCsvFileStyle = {
+    position: 'absolute',
+    top: 610,
+    left: 720,
+    border: '1px solid black',
+    width: 636,
+    height: 70,
+    borderRadius: 9,
+  };
+
+  const dialerSubmitBtnStyle = {
+    position: 'absolute',
+    top: 760,
+    left: 900,
+  };
+
+  const submitBtnStyle = {
+    fontFamily: '"Acme", sans-serif',
+    fontWeight: 600,
+    fontSize: 20,
+    backgroundColor: '#b689c5',
+    width: 250,
+    height: 64,
+    borderRadius: 62,
+  };
+
   return (
     <>
       <main className="hidden sm:block">
@@ -28,119 +92,32 @@ export default function DialerPage() {
             className="dialer-logo"
           ></Image>
           <h1 className="dialer-heading">Launch Dialer</h1>
-          <form className="dialer-form">
-            <label htmlFor="url" className="dialer-path">
+          <form style={dialerFormStyle} className="dialer-form">
+            <label htmlFor="url" style={dialerPathStyle} className="dialer-path">
               Enter Your Dialer Path Here
             </label>
-            <input type="url" id="url" name="url" className="path"></input>
+            <input type="url" id="url" name="url" style={pathStyle} className="path" />
 
-            <label htmlFor="file" className="csv-file">
+            <label htmlFor="file" style={csvFileStyle} className="csv-file">
               Upload Your CSV File Here
             </label>
             <input
               type="url"
               id="url"
               name="url"
+              style={uploadCsvFileStyle}
               className="upload-csv-file"
-            ></input>
+            />
 
-            <div className="dialer-submit-btn">
+            <div style={dialerSubmitBtnStyle} className="dialer-submit-btn">
               <input
                 type="submit"
                 value="Launch"
+                style={submitBtnStyle}
                 className="submit-btn"
-              ></input>
+              />
             </div>
           </form>
-        </div>
-      </main>
-      <main className="bg-black h-28 w-full sm:hidden">
-        <div className="flex flex-row justify-center items-center  px-3 py-9">
-          <h1 className="font-sans font-bold text-3xl text-white">
-            AI DIALER PRO
-          </h1>
-
-          <div className="sm:hidden flex flex-1 justify-end items-center">
-            <img
-              src={isOpen ? "close.svg" : "menu.svg"}
-              alt="menu"
-              className="w-[28px] h-[28px] object-contain cursor-pointer mx-4"
-              onClick={handleToggle}
-            />
-            <div
-              className={`${
-                !isOpen ? "hidden" : "flex"
-              } p-6 bg-gray-900 absolute top-16 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-            >
-              <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-                <li
-                  className="font-sans font-medium cursor-pointer text-white text-[16px]"
-                  onClick={handleToggle}
-                >
-                  <Link href="/Homepage">HOME</Link>
-                </li>
-
-                <li
-                  className="font-sans font-medium cursor-pointer text-white text-[16px]"
-                  onClick={handleToggle}
-                >
-                  <Link href="./pages" prefetch={true}>
-                    LOGIN
-                  </Link>
-                </li>
-                <li
-                  className="font-sans font-medium cursor-pointer text-white text-[16px]"
-                  onClick={handleToggle}
-                >
-                  <Link href="/pages/new">
-                    INSTRUCTION
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <main className="sm:hidden ">
-        <div className="min-h-screen flex items-center justify-center bg-[#d1b5db] py-2">
-          <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-lg h-[30rem] p-4 w-full max-w-md space-y-6">
-            <div className="w-full">
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Launch Dialer
-              </label>
-              <input
-                type="text"
-                placeholder="Enter Your Dialer Path Here"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Upload Path
-              </label>
-              <input
-                type="text"
-                placeholder="Upload Your CSV File Here"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
-                disabled
-              />
-              <div className="flex items-center space-x-2">
-                <input
-                  type="file"
-                  className="text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
-                />
-              </div>
-            </div>
-            <div className="flex items-center justify-center py-4">
-              <a href="/pages/new/last">
-                <button className="bg-[#d1b5db] px-6 py-3 font-bold rounded-full">
-                  LAUNCH
-                </button>
-              </a>
-            </div>
-          </div>
         </div>
       </main>
     </>
