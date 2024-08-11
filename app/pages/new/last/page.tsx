@@ -120,6 +120,50 @@ export default function DialerPage() {
           </form>
         </div>
       </main>
+      <main className="sm:hidden ">
+        <div className="min-h-screen flex items-center justify-center bg-[#d1b5db] py-2">
+          <div className="flex flex-col items-center justify-center bg-white shadow-lg rounded-lg h-[30rem] p-4 w-full max-w-md space-y-6">
+            <div className="w-full">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Launch Dialer
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Your Dialer Path Here"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Upload Path
+              </label>
+              <input
+                type="text"
+                placeholder="Upload Your CSV File Here"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2"
+                disabled
+              />
+              <div className="flex items-center space-x-2">
+                <input
+                  type="file"
+                  className="text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+                />
+              </div>
+            </div>
+            <div className="flex items-center justify-center py-4">
+              <a href="/pages/new/last">
+                <button className="bg-[#d1b5db] px-6 py-3 font-bold rounded-full">
+                  LAUNCH
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
     </>
   );
 }
