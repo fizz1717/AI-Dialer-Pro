@@ -18,10 +18,10 @@ const Navbar = () => {
               <Image src={"../img/logo.svg"} width={152} height={0} alt="logo" className="logo" />
               <p className="text-xl md:text-2xl lg:text-3xl font-semibold">AI DIALER PRO</p>
               <div className="nav-buttons flex space-x-4 md:space-x-6">
-                  <button><a href="http://localhost:3000/">Home</a></button>
+                  <button><a href="/Homepage">Home</a></button>
                   
                   <button><a href="/pages">Login</a></button>
-                  <button><a href="http://localhost:3000/pages/new">Instruction</a></button>
+                  <button><a href="/pages/new">Instruction</a></button>
               </div>
           </div>
       </main>
@@ -45,7 +45,7 @@ const Navbar = () => {
                                   className="font-sans font-medium cursor-pointer text-white text-[16px]"
                                   onClick={handleToggle}
                               >
-                                  <Link href="http://localhost:3000/">HOME</Link>
+                                  <Link href="/Homepage">HOME</Link>
                               </li>
                               
 
@@ -61,7 +61,7 @@ const Navbar = () => {
                                   className="font-sans font-medium cursor-pointer text-white text-[16px]"
                                   onClick={handleToggle}
                               >
-                                  <Link href="http://localhost:3000/pages/new">INSTRUCTION</Link>
+                                  <Link href="/pages/new">INSTRUCTION</Link>
                               </li>
 
                           </ul>
