@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Navbar from "@/app/components/Navbar";
 import Link from "next/link";
-import '../app/globals.css';
+import '../app/globals.css'; 
 export default function DialerPage() {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => {
