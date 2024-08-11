@@ -134,12 +134,10 @@ export default function DialerPage() {
 
             {/* Right Submit Button */}
             <div style={dialerSubmitBtnLeftStyle} className="dialer-submit-btn">
-              <input
-                type="submit"
+              <button type="submit"
                 value="Stop the dialer"
                 style={submitBtnStyle}
-                className="submit-btn"
-              />
+                className="submit-btn">Stop the dialer</button>
             </div>
 
             {/* Left Submit Button */}
@@ -147,25 +145,20 @@ export default function DialerPage() {
               style={dialerSubmitBtnMiddleStyle}
               className="dialer-submit-btn"
             >
-              <input
-                type="submit"
+              <button type="submit"
                 value="Open the dialer"
                 style={submitBtnStyle}
-                className="submit-btn"
-              />
+                className="submit-btn">Open the dialer</button>
             </div>
-
             {/* Middle Submit Button */}
             <div
               style={dialerSubmitBtnRightStyle}
               className="dialer-submit-btn"
             >
-              <input
-                type="submit"
+              <button type="submit"
                 value="Run the dialer"
                 style={submitBtnStyle}
-                className="submit-btn"
-              />
+                className="submit-btn">Run the dialer</button>
             </div>
           </form>
         </div>
