@@ -12,24 +12,24 @@ export default function DialerPage() {
 
   // Inline styles
   const dialerFormStyle = {
-    position: 'absolute',
+    position: 'absolute' as const,
     top: 0,
   };
 
   const dialerPathStyle = {
-    position: 'absolute',
+    position: 'absolute' as const,
     top: 400,
     left: 720,
     fontFamily: '"Quicksand", sans-serif',
     fontSize: 35,
     fontWeight: 400,
-    fontStyle: 'normal',
+    fontStyle: 'normal' as const,
     zIndex: 1,
     width: 432,
   };
 
   const pathStyle = {
-    position: 'absolute',
+    position: 'absolute' as const,
     top: 450,
     left: 720,
     border: '0.5px solid #323941',
@@ -39,7 +39,7 @@ export default function DialerPage() {
   };
 
   const csvFileStyle = {
-    position: 'absolute',
+    position: 'absolute' as const,
     top: 560,
     left: 720,
     fontFamily: '"Quicksand", sans-serif',
@@ -48,7 +48,7 @@ export default function DialerPage() {
   };
 
   const uploadCsvFileStyle = {
-    position: 'absolute',
+    position: 'absolute' as const,
     top: 610,
     left: 720,
     border: '1px solid black',
@@ -58,7 +58,7 @@ export default function DialerPage() {
   };
 
   const dialerSubmitBtnStyle = {
-    position: 'absolute',
+    position: 'absolute' as const,
     top: 760,
     left: 900,
   };
