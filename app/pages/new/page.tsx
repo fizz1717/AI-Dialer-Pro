@@ -1,18 +1,18 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-
 import Link from "next/link";
+
 export default function InstructionsPage() {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
-    
       <main className="hidden sm:block">
-        <main className="instructions-page ">
+        <main className="instructions-page">
           <div className="instructions">
             <Image
               src={"../img/logo.svg"}
@@ -20,7 +20,7 @@ export default function InstructionsPage() {
               height={0}
               alt="logo"
               className="logo"
-            ></Image>
+            />
             <h1>Steps To Initiate The Dialer!</h1>
             <div>
               <h2>Step No:1: Download T-Max Softdialer:</h2>
@@ -53,19 +53,19 @@ export default function InstructionsPage() {
                   your desktop.
                 </li>
                 <li>
-                  2. From the context menu, select "Properties". This will open
+                  2. From the context menu, select &quot;Properties&quot;. This will open
                   the Properties window.
                 </li>
                 <li>
-                  3. In the Properties window, look for the "Target" field.
+                  3. In the Properties window, look for the &quot;Target&quot; field.
                 </li>
                 <li>4. It will display the path to the .exe file.</li>
-                <li>5. For example,Target field shows something like:</li>
+                <li>5. For example, Target field shows something like:</li>
                 <li>
                   6. C:\Program Files (x86)\T-Max\Softdialer\Softdialer.exe
                 </li>
                 <li>
-                  7. Save this target in any of your text file its important
+                  7. Save this target in any of your text files; it’s important
                   while activating the dialer.
                 </li>
               </ol>
@@ -74,7 +74,7 @@ export default function InstructionsPage() {
               <h2>Step No:4: Navigate towards AI Dialer:</h2>
               <ol>
                 <li>
-                  1. If the above given instructions are completed successfully
+                  1. If the above instructions are completed successfully,
                   click the link given below.
                 </li>
                 <li>2. AI Dialer</li>
@@ -196,11 +196,11 @@ export default function InstructionsPage() {
                       your desktop.
                     </li>
                     <li>
-                      From the context menu, select "Properties". This will open
+                      From the context menu, select &quot;Properties&quot;. This will open
                       the Properties window.
                     </li>
                     <li>
-                      In the Properties window, look for the "Target" field.
+                      In the Properties window, look for the &quot;Target&quot; field.
                     </li>
                     <li>It will display the path to the .exe file.</li>
                     <li>For example, Target field shows something like:</li>
