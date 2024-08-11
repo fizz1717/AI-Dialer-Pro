@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 const Homepage = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const Homepage = () => {
           className="bg1 w-full h-auto object-cover"
           width={250}
           height={250}
-        ></Image>
+        />
         <h1 className="absolute left-10 top-20 text-white text-2xl md:text-4xl lg:text-5xl font-bold">
           Ready to elevate your call center operations to new heights?
         </h1>
@@ -28,13 +29,13 @@ const Homepage = () => {
             className="w-32 h-auto md:w-48 lg:w-[50rem]"
             width={250}
             height={250}
-          ></Image>
+          />
         </div>
       </div>
       <div className="sm:hidden">
-        <div className=" flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <div className="bg-color h-[80rem] w-full">
-            <h1 className="text-white font-bold text-4xl text-center  py-20 px-5">
+            <h1 className="text-white font-bold text-4xl text-center py-20 px-5">
               Ready to elevate your call center operations to new heights?
             </h1>
             <Image
@@ -42,13 +43,13 @@ const Homepage = () => {
               alt="girl"
               width={250}
               height={250}
-            ></Image>
-            <h1 className="text-white font-bold text-2xl text-center  py-20 px-5">
-              Our AI Dialer Pro is the professional solution you've been
+            />
+            <h1 className="text-white font-bold text-2xl text-center py-20 px-5">
+              Our AI Dialer Pro is the professional solution you have been
               seeking.
             </h1>
             <div className="flex items-center justify-center">
-              <button className="bg-white px-6 py-3  rounded-full">
+              <button className="bg-white px-6 py-3 rounded-full">
                 <a href="/pages">Get Started</a>
               </button>
             </div>
@@ -58,4 +59,5 @@ const Homepage = () => {
     </>
   );
 };
+
 export default Homepage;
