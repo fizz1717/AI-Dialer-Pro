@@ -39,6 +39,7 @@ const Homepage = () => {
             </h1>
             <Image
               src="../img/call-center-girl.svg"
+              alt="girl"
               width={250}
               height={250}
             ></Image>
