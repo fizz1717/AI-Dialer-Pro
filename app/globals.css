@@ -209,9 +209,9 @@ background: linear-gradient(90deg, rgba(158,85,245,1) 29%, rgba(248,101,169,1) 7
       padding-left: 100px;
       padding-bottom: 8px;
     }
-    .next-btn {
+    /* .next-btn {
       
-    }
+    } */
   }
   .instructions-bg {
     /* height: 100%; */
@@ -243,12 +243,11 @@ background: linear-gradient(90deg, rgba(158,85,245,1) 29%, rgba(248,101,169,1) 7
     top: 0;
     padding: 70px 220px;
   }
-}
-  .inside-dialer-box .dialer-logo {
-  position: absolute;
-  top: 110px;
-  left: 240px;
-}
+  .dialer-logo {
+    position: absolute;
+    top: 110px;
+    left: 240px;
+  }
   .dialer-heading {
     position: absolute;
     top: 210px;
