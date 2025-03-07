@@ -1,3 +1,6 @@
+# AI Dialer Pro
+AI Dialer Pro is an innovative communication tool designed to overcome challenges like IP blacklisting and inefficiencies in traditional call management systems. Utilizing a random forest classifier, it enhances customer engagement and productivity while ensuring seamless communication. Built with Next.js for a dynamic front-end and Python Flask for a robust backend, AI Dialer Pro offers an intuitive interface, making it accessible to businesses of all sizes.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
